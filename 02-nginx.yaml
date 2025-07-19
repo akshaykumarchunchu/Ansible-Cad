@@ -20,7 +20,7 @@
   - name: install nginx
     ansible.builtin.dnf:
       name: install 
-      state: lastest
+      state: latest
   - name: start services
     ansible.builtin.service:
       name: start services
