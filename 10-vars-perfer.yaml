@@ -6,10 +6,10 @@
   vars_files:
   - vars.yaml
 
-  vars_prompt:
-  - name: WISHES 
-    prompt: WISHES from prompt
-    private: false
+  # vars_prompt:
+  # - name: WISHES 
+  #   prompt: WISHES from prompt
+  #   private: false
 
   tasks: 
   - name: Perfer variables
@@ -20,7 +20,7 @@
 
 
 # 1. arguments
-# 2. 
+# 2. prompt level 
 #
 #
 #
