@@ -1,0 +1,11 @@
+- name: conditions in variables
+  hosts: web
+  become: yes
+  tasks:
+  - name: conditions
+    ansible.builtin.command: id expense
+    ignore_errors: yes
+
+  - name: print Information
+    ansible.builtin.debug: 
+      msg: "Hello"
