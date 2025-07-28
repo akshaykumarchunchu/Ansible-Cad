@@ -8,8 +8,8 @@
   - name: Password
     prompt: Enter Password
     private: True
-    
+
   tasks: 
-  - name: variables through Prompt
+  - name: Prompt in varaibles
     anisble.builtin.debug:
       msg: "Hi, Enter username: {{username}} and Password: {{Password}}"
