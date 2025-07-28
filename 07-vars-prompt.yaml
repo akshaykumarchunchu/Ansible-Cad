@@ -11,5 +11,5 @@
 
   tasks: 
   - name: Prompt in varaibles
-    anisble.builtin.debug:
+    ansible.builtin.debug:
       msg: "Hi, Enter username: {{username}} and Password: {{Password}}"
