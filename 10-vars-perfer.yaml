@@ -6,21 +6,21 @@
   vars_files:
   - vars.yaml
 
-  # vars_prompt:
-  # - name: WISHES 
-  #   prompt: WISHES from prompt
-  #   private: false
+  vars_prompt:
+  - name: WISHES 
+    prompt: WISHES from prompt
+    private: false
 
   tasks: 
   - name: Perfer variables
-    vars: 
-      WISHES: "WISHES from Task level"
+    # vars: 
+    #   WISHES: "WISHES from Task level"
     ansible.builtin.debug:
       msg: GOOD {{WISHES}}
 
 
 # 1. arguments
-# 2. prompt level 
+# 2. Task level variable
 #
 #
 #
