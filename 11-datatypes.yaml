@@ -3,14 +3,14 @@
   vars:
     Course: Devops with AWS
     Tools:  # List
-      - linux
-      - shell
-      - Terraform
-  Experience: # Map or dictionary 
-    devops: 3
-    aws: 2
-    docker: 1
-  Realproject: true
+    - linux
+    - shell
+    - Terraform
+    Experience: # Map or dictionary 
+      devops: 3
+      aws: 2
+      docker: 1
+    Realproject: true
   tasks:
   - name: datatype in ansible
     ansible.builtin.debug:
