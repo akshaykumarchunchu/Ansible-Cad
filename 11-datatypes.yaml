@@ -1,10 +1,11 @@
 - name: Datatypes in var
   hosts: localhost
-  Course: Devops with AWS
-  Tools:  # List
-  - linux
-  - shell
-  - Terraform
+  vars:
+    Course: Devops with AWS
+    Tools:  # List
+      - linux
+      - shell
+      - Terraform
   Experience: # Map or dictionary 
     devops: 3
     aws: 2
