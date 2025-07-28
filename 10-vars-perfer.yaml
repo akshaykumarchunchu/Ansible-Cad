@@ -16,11 +16,10 @@
       msg: GOOD {{WISHES}}
 
 
-# 1. arguments
-# 2. Task level variable
-# 3. variables from files 
-# 4. prompt from variables
-# 5. play level variables
-# 6. 
-#
-#
+# 1. arguments variables 
+# 2. Task variable  
+# 3. files variables  
+# 4. prompt variables 
+# 5. play level variables  
+# 6. inventory variables  
+# 7. Role level variables

@@ -1,0 +1,17 @@
+- name: Datatypes in var
+  hosts: localhost
+  Course: Devops with AWS
+  Tools:  # List
+  - linux
+  - shell
+  - Terraform
+  Experience: # Map or dictionary 
+    devops: 3
+    aws: 2
+    docker: 1
+  Realproject: true
+  tasks:
+  - name: datatype in ansible
+    ansible.builtin.debug:
+      msg: "I'm {{Course}} with Tools {{Tools}} and experience {{Experience}} worked on {{Realproject}}"
+  
