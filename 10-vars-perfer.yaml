@@ -1,7 +1,7 @@
 - name: Perfer variables first
   hosts: localhost
-  vars: 
-    WISHES: "WISHES from Play level"
+  # vars: 
+  #   WISHES: "WISHES from Play level"
   # vars_files:
   # - vars.yaml
   # vars_prompt:
@@ -20,7 +20,7 @@
 # 2. Task level variable
 # 3. variables from files 
 # 4. prompt from variables
-#
-#
+# 5. play level variables
+# 6. 
 #
 #
