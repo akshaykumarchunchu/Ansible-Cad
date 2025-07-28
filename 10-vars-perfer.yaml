@@ -3,8 +3,8 @@
   vars: 
     WISHES: "WISHES from Play level"
 
-  vars_files:
-  - vars.yaml
+  # vars_files:
+  # - vars.yaml
 
   vars_prompt:
   - name: WISHES 
@@ -21,8 +21,8 @@
 
 # 1. arguments
 # 2. Task level variable
-#
-#
+# 3. variables from files 
+# 4. prompt from variables
 #
 #
 #
