@@ -1,0 +1,15 @@
+- name: Prompt in variables
+  hosts: localhost
+  vars:
+  - name: username
+    prompt: Enter username
+    private: false
+
+  - name: Password
+    prompt: Enter Password
+    private: True
+    
+  tasks: 
+  - name: variables through Prompt
+    anisble.builtin.debug:
+      msg: "Hi, Enter username: {{username}} and Password: {{Password}}"
