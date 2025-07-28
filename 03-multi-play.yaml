@@ -1,0 +1,16 @@
+- name: multi plays
+  hosts: web
+  become: yes
+  tasks: # multiplay
+  - name: multi play-1
+    ansible.builtin.debug:
+      msg: "Hi I love Devops, Trainer Sivakumar and duration: 120 hours"
+
+- name: Play-2
+  hosts: web
+  become: yes
+  tasks: 
+  - name: Play 2
+    ansible.builtin.debug:
+      msg: "Running in Play-2"
+  
