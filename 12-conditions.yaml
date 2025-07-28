@@ -4,8 +4,13 @@
   tasks:
   - name: conditions
     ansible.builtin.command: id expense
+    register: USER
     ignore_errors: yes
 
+  - name: print user Information
+    ansible.builtin.debug:
+      msg: "Print user information {{USER}}"
+      
   - name: print Information
     ansible.builtin.debug: 
       msg: "Hello"
