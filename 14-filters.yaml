@@ -56,3 +56,18 @@
   - name: After convert dictionary to iteams
     ansible.builtin.debug: 
       msg: "After convert {{ my_dict | dict2items }}"
+
+- name: convert list to dictionary
+  hosts: localhost
+  vars:
+    my_list: #call this a list 
+    - {'key': 'Course', 'value': 'Ansible'} 
+    - {'key': 'Trainer', 'value': 'SivaKumar'} 
+    - {'key': 'Duration', 'value': '120hours'}
+  tasks:
+  - name: Before converting list to dictionary
+    ansible.builtin.debug:
+      msg: "Before convert {{ my_list }}"
+  - name: After convert list to dictionary
+    ansible.builtin.debug: 
+      msg: "After convert {{ my_list | items2dict }}"
