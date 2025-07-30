@@ -1,11 +1,10 @@
 - name: demo and loop 
   hosts: localhost
   tasks:
-  - name: loops
+  - name: print names
     ansible.builtin.debug:
       msg: "Hello {{items}}"
-    loops:
+    loop:
     - linux
     - shell
     - ansible
-    
