@@ -1,5 +1,7 @@
 - name: demo and loop 
   hosts: localhost
+  vars:
+    items: "print names"
   tasks:
   - name: print names
     ansible.builtin.debug:
