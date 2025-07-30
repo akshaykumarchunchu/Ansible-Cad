@@ -31,3 +31,13 @@
   - name: duplicates
     ansible.builtin.debug:
       msg: "{{ numbers | unique }}"
+
+- name: max and min
+  hosts: localhost
+  vars: 
+    ages: [25, 35, 45, 55]
+  tasks: 
+  - name: convert into lower case
+    ansible.builtin.debug:
+      msg: "min ages: {{ ages | min }} max ages: {{ ages | max }}"
+      
