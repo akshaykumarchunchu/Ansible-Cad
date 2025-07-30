@@ -40,4 +40,20 @@
   - name: convert into lower case
     ansible.builtin.debug:
       msg: "min ages: {{ ages | min }} max ages: {{ ages | max }}"
+
+
+- name: convert dictionary into iteams
+  hosts: localhost
+  vars:
+    my_dict: #we call this a dictionary map or key/value pair
+      Course: Ansible
+      Trainer: SivaKumar
+      Duration: 120hours
+  tasks:
+  - name: Before converting dictionary to iteams
+    ansible.builtin.debug:
+      msg: "Before convert {{my_dict}}"
+  - name: After convert dictionary to iteams
+    ansible.builtin.debug: 
+      msg: "After convert {{my_dict | dict2iteams}}"
       
