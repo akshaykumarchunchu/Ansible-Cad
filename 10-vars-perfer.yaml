@@ -1,24 +1,24 @@
 - name: Perfer variables first
   hosts: localhost
-  # vars: 
-  #   WISHES: "WISHES from Play level"
-  # vars_files:
-  # - vars.yaml
-  # vars_prompt:
-  # - name: WISHES 
-  #   prompt: WISHES from prompt
-  #   private: false
+  vars: 
+    WISHES: "WISHES from Play level"
+  vars_files:
+  - vars.yaml
+  vars_prompt:
+  - name: WISHES 
+    prompt: WISHES from prompt
+    private: false
   tasks: 
   - name: Perfer variables
-    # vars: 
-    #   WISHES: "WISHES from Task level"
+    vars: 
+      WISHES: "WISHES from Task level"
     ansible.builtin.debug:
       msg: GOOD {{WISHES}}
 
 
 # 1. arguments variables 
 # 2. Task variable  
-# 3. files variables  
+# 3. variables files  
 # 4. prompt variables 
 # 5. play level variables  
 # 6. inventory variables  
